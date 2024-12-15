@@ -1,0 +1,48 @@
+body{
+    background-color:black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+button{
+    background-color: rgb(67, 67, 67);
+    color:white;
+    border-radius: 15px;
+    box-shadow: 0 0 2.8px 0 white;
+   
+    
+}
+button:hover{
+    background-color:rgb(99, 93, 93) ;
+}
+button:active{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.rotar{
+    animation: girar 2s linear infinite;
+}
+@keyframes girar{
+    from{
+        transform: rotate(-360deg);
+    }
+}
+.palpitar{
+    animation: corazon 1.5s linear infinite;
+}
+@keyframes corazon{
+    0%{
+        transform:scale(1) ;
+    }
+    50%{
+        transform:scale(1.3) ;
+    }
+100%{
+    transform:scale(1) ;
+}
+
+}
